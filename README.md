@@ -28,15 +28,15 @@ For several years, Infrabel, the Belgian railway infrastructure manager, was usi
 
 ## Classes typology
 To ensure the comprehensiveness and relevance of the class labels, we conducted a thorough review of existing literature and consulted with railway industry experts. Therefore, we have not limited our analysis to the meaning and geometric appearance of each class, but also its relevance to the railway industry. This resulted in the following list of classes and their corresponding objects as illustrated in Figure 5:
-•	Ground (label 1): Represents various ground surfaces, including rough ground, cement, and asphalt.
-•	Vegetation (label 2): Covers all types of vegetation present in the railway environment, such as trees, and median vegetation.
-•	Rail (label 3): Refers to the physical track structure; rails.
-•	Poles (label 4): Includes all types of poles found along the railway, such as catenary poles, and utility poles.
-•	Wires (label 5): Covers various overhead wires, including catenary wires, power lines, and communication cables.
-•	Signalling (label 6): Represents all types of railway signaling equipment, such as traffic lights, and traffic signs.
-•	Fence (label 7): Includes various types of fences and barriers used along the railway, such as security fences, noise insulation panels, and guardrails. 
-•	Installation (label 8): Refers to larger structures that are part of the railway infrastructure, such as boxes, and passenger cabins. 
-•	Building (label 9): Covers all types of buildings located within the railway corridor, such as houses, warehouses, and stations.
+- Ground (label 1): Represents various ground surfaces, including rough ground, cement, and asphalt.
+- Vegetation (label 2): Covers all types of vegetation present in the railway environment, such as trees, and median vegetation.
+- Rail (label 3): Refers to the physical track structure; rails.
+- Poles (label 4): Includes all types of poles found along the railway, such as catenary poles, and utility poles.
+- Wires (label 5): Covers various overhead wires, including catenary wires, power lines, and communication cables.
+- Signalling (label 6): Represents all types of railway signaling equipment, such as traffic lights, and traffic signs.
+- Fence (label 7): Includes various types of fences and barriers used along the railway, such as security fences, noise insulation panels, and guardrails.
+- Installation (label 8): Refers to larger structures that are part of the railway infrastructure, such as boxes, and passenger cabins.
+- Building (label 9): Covers all types of buildings located within the railway corridor, such as houses, warehouses, and stations.
 
 
 ## ⭐ Benchmark

@@ -123,11 +123,11 @@ To train KPConv on the Rail3D dataset, follow these steps:
 ## Testing the Trained Model
 To test a trained KPConv model on the Rail3D dataset:
 
-1. **Selecting the Model**: In `test_any_model.py`, follow the commented instructions to select the trained model you wish to test.
+1. **Selecting the Model**: In `test_model.py`, follow the commented instructions to select the trained model you wish to test.
 2. **Running the Test**:
 
     ```bash
-    python test_any_model.py
+    python test_model.py
     ```
 
 This guide provides a comprehensive overview of applying KPConv to the Rail3D dataset, from data preparation through training to testing the model. For further customization and advanced usage, refer to the [KPConv-PyTorch documentation](https://github.com/HuguesTHOMAS/KPConv-PyTorch).

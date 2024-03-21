@@ -5,7 +5,7 @@
 
 In this paper, we propose the first multi-context point cloud dataset called Rail3D. This dataset covers three countries: Hungary, France, and Belgium, with a total length of almost 5.8 kilometers and approximately 288 million points. It covers the 9 most relevant classes for railway applications: Ground, Vegetation, Rail, Poles, Wires, Signalling, Fences, Installations, and Buildings. We conducted a generic classification with 9 universal classes (Ground, Vegetation, Rail, Poles, Wires, Signaling, Fence, Installation and Building) and evaluated the performance of three state-of-the-art models: KPConv (Kernel Point Convolution), LightGBM, and Random Forest. The best performing model, a fine-tuned KPConv, achieved a mean Intersection over Union (mIoU) of 86%. While the LightGBM-based method achieved a mIoU of 71%, outperforming Random Forest. We are also looking for feedback from the user community to improve our approach and grow the dataset with other countries. We recommend evaluating our developed dataset with alternative deep learning methods to assess their performance. Additionally, exploring the developed method in diverse railway contexts by selecting different objects. Future work involves the exploration of semantic information within the Rail3D for 3D change detection, aiming to assess the use of semantics for change detection in different railway contexts.
 
-## ⭐ Download
+# ⭐ Download
 
 Please fill out this [**Data Request**](https://forms.gle/2iLWQQhhyRfzGrgq5) if you have access to Google Forms. 
 
@@ -13,7 +13,7 @@ Download links will be sent automatically after completing the application.
 
 <img src="images/rail3d.png" alt="Network" style="zoom:100%;" />
 
-## 📌 Dataset
+# 📌 Dataset
 
 This section details the process of creating the datasets and the methods developed. We begin by describing the data specifications, then the used classes, and how the annotation process was performed.
 
@@ -54,7 +54,7 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 <img src="images/rail3d_stats.png" alt="Network" style="zoom:100%;" />
 
 
-## ⭐ Benchmark
+# ⭐ Benchmark
 
 <img src="images/hmls_benchmark.png" alt="Network" style="zoom:100%;" />
 
@@ -72,11 +72,14 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 
 
 
-## ✔ Code
+# ✔ Implementation
+
+## KPConv implementation
+This section contains the the machine learning model developed for semantic segmentation of railway environments using KPConv.
 
 
 ## 3DMasc implementation
-This section contains the the machine learning model developed for semantic segmentation of railway environments using the 3DMASC plugin in CloudCompare. The Rail3D dataset is meticulously labeled to support research in railway semantic segmentation.
+This section contains the the machine learning model developed for semantic segmentation of railway environments using the 3DMASC plugin in CloudCompare.
 
 
 
@@ -111,6 +114,17 @@ This section contains the the machine learning model developed for semantic segm
 - After segmentation, export the results via `File` > `Save As`.
 - Choose your preferred format and specify the destination.
 
+```
+@article{letard2024,
+title={3DMASC: Accessible, explainable 3D point clouds classification. Application to bi-spectral topo-bathymetric lidar data},
+author={Letard, Mathilde and Lague, Dimitri and Le Guennec, Arthur and Lefèvre, Sébastien and Feldmann, Baptiste and Leroy, Paul and Girardeau-Montaut, Daniel and Corpetti, Thomas},
+journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+volume={207},
+pages={175-197},
+year={2024},
+publisher={Elsevier}
+}
+```
 
 ## ✨ Citation
 

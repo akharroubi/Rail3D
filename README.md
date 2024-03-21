@@ -76,6 +76,58 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 
 ## KPConv implementation
 This section contains the the machine learning model developed for semantic segmentation of railway environments using KPConv.
+## Introduction
+This repository details the implementation of Kernel Point Convolution (KPConv) in PyTorch for the Rail3D dataset. KPConv is a powerful point convolution operator for point clouds, introduced in the ICCV2019 paper by Hugues Thomas et al. For more details, visit the [KPConv-PyTorch GitHub repository](https://github.com/HuguesTHOMAS/KPConv-PyTorch).
+
+If you find KPConv useful in your research, please consider citing the original paper:
+
+```
+@article{thomas2019KPConv,
+Author = {Thomas, Hugues and Qi, Charles R. and Deschaud, Jean-Emmanuel and Marcotegui, Beatriz and Goulette, Fran{\c{c}}ois and Guibas, Leonidas J.},
+Title = {KPConv: Flexible and Deformable Convolution for Point Clouds},
+Journal = {Proceedings of the IEEE International Conference on Computer Vision},
+Year = {2019}
+}
+```
+
+
+## Data Preparation
+1. **Data Location**: Assume the experiment folder is located at `XXXX/Experiments/KPConv-PyTorch`. The Rail3D dataset should be placed in a common Data folder at `XXXX/Data`. Thus, the relative path to the Data folder is `../../Data`.
+
+2. **Dataset Setup**: Modify the `self.path` variable in the dataset class to point to your Rail3D dataset location.
+
+## Training KPConv on Rail3D
+To train KPConv on the Rail3D dataset, follow these steps:
+
+1. **Start Training**:
+    - Run the training script tailored for the Rail3D dataset. If you're adapting an existing script, ensure the dataset paths and configurations are correctly set for Rail3D.
+    ```bash
+    python training_Rail3D.py
+    ```
+    - The first run might take some time as it may precompute certain dataset structures.
+
+2. **Training Configuration**:
+    - Adjustments to the training parameters can be made in a configuration subclass. Ensure to review and modify these settings to optimize training for Rail3D.
+
+## Monitoring Training Progress
+- **Log Folder**: Each training session creates a dated log folder containing loss values, validation metrics, model checkpoints, etc.
+- **Plotting Convergence**: Use the `plot_convergence.py` script to visualize training progress. Detailed instructions within the script will guide you in selecting the appropriate training log.
+    ```bash
+    python plot_convergence.py
+    ```
+
+## Testing the Trained Model
+To test a trained KPConv model on the Rail3D dataset:
+
+1. **Selecting the Model**: In `test_any_model.py`, follow the commented instructions to select the trained model you wish to test.
+2. **Running the Test**:
+
+    ```bash
+    python test_any_model.py
+    ```
+
+This guide provides a comprehensive overview of applying KPConv to the Rail3D dataset, from data preparation through training to testing the model. For further customization and advanced usage, refer to the [KPConv-PyTorch documentation](https://github.com/HuguesTHOMAS/KPConv-PyTorch).
+
 
 
 ## 3DMasc implementation
@@ -119,10 +171,7 @@ This section contains the the machine learning model developed for semantic segm
 title={3DMASC: Accessible, explainable 3D point clouds classification. Application to bi-spectral topo-bathymetric lidar data},
 author={Letard, Mathilde and Lague, Dimitri and Le Guennec, Arthur and Lefèvre, Sébastien and Feldmann, Baptiste and Leroy, Paul and Girardeau-Montaut, Daniel and Corpetti, Thomas},
 journal={ISPRS Journal of Photogrammetry and Remote Sensing},
-volume={207},
-pages={175-197},
 year={2024},
-publisher={Elsevier}
 }
 ```
 

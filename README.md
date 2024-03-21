@@ -74,7 +74,43 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 
 ## ✔ Code
 
-Coming soon...
+
+## 3DMasc implementation
+This section contains the the machine learning model developed for semantic segmentation of railway environments using the 3DMASC plugin in CloudCompare. The Rail3D dataset is meticulously labeled to support research in railway semantic segmentation.
+
+
+
+### Prerequisites
+- CloudCompare (latest version with 3DMASC plugin included)
+
+
+### Installation
+1. **CloudCompare**: Download and install CloudCompare from the [official website](https://www.danielgm.net/cc/). Ensure you have the latest version that includes the 3DMASC plugin.
+2. **Rail3D Dataset and Configuration Files**: Download the Rail3D dataset and the necessary configuration files for segmentation.
+
+
+### Step 1: Load the Dataset in CloudCompare
+- Open CloudCompare.
+- Navigate to `File` > `Open` and select the Rail3D dataset file from the cloned repository.
+
+### Step 2: Semantic Segmentation with 3DMASC
+#### Access 3DMASC Plugin
+- In CloudCompare, go to `Plugins` > `3DMASC`.
+
+#### Train a New Classifier
+- Select "Train classifier".
+- Specify the core points cloud (PCX) and the parameter file from this repository.
+- Adjust settings as necessary and start the training. Save the model upon completion.
+
+#### Apply a Pre-trained Classifier
+- Choose "3DMASC classification".
+- Provide the path to your pre-trained classifier model and the parameter file.
+- Execute the classification. The dataset will be updated with segmentation results.
+
+### Step 3: Exporting the Segmented Dataset
+- After segmentation, export the results via `File` > `Save As`.
+- Choose your preferred format and specify the destination.
+
 
 ## ✨ Citation
 

@@ -1,0 +1,29 @@
+# NAMES OF YOUR POINT CLOUDS
+cloud: PC1=  # Point cloud for training
+cloud: corepoints=
+
+# CORE POINTS
+core_points: corepoints
+
+# SCALES
+scales: 0.5;1;1.5;2  # scales as a list
+
+# FEATURES
+
+
+feature: DIP_SCx_PC1
+feature: DIPDIR_SCx_PC1
+feature: PCA1_SCx_PC1
+feature: PCA2_SCx_PC1
+feature: PCA3_SCx_PC1
+feature: SPHER_SCx_PC1
+feature: ANISO_SCx_PC1
+feature: LINEA_SCx_PC1
+feature: PLANA_SCx_PC1
+feature: Zmin_SCx_PC1
+feature: Zmax_SCx_PC1
+feature: ZRANGE_SCx_PC1
+feature: NORMDIP_SCx_MEDIAN_PC1
+
+#We already calculated the verticality, you can ignore it if an error shows
+feature: VERT_SCx_MEDIAN_PC1

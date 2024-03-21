@@ -56,11 +56,15 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 
 # ⭐ Benchmark
 
+These experiments required the creation of python code and the implementation of the original experiments. For 3DMASC, from feature extraction to inference, it was performed with 3DMAsc plugin of cloudcompare. Whereas for KPConv, we utilize PyTorch original implementations. For LightGBM and 3DMasc we used Cloud-Compare Plugin for feature extraction and feature importance. Then, we created Py-thon scripts with LightGBM framework (version 4.3.0) for classification. All these codes were accessed on 14 January 2024 and experiments were carried out on a workstation with a NVIDIA GeForce RTX 3090 graphics card and an i9-10980XE CPU @ 3.00GHz with 256 GB RAM. 
+
 <img src="images/hmls_benchmark.png" alt="Network" style="zoom:100%;" />
 
 <img src="images/sncf_benchmark.png" alt="Network" style="zoom:100%;" />
 
 <img src="images/infrabel_benchmark.png" alt="Network" style="zoom:100%;" /> 
+
+In the following figure we visually show samples of the point cloud, ground truth inputs and the results of KPConv, 3DMasc and LightGBM successively.
 
 <img src="images/infrabel_gt.png" alt="Network" style="zoom:100%;" />
 

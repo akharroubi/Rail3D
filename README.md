@@ -48,10 +48,16 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 - Installation (label 8): Refers to larger structures that are part of the railway infrastructure, such as boxes, and passenger cabins.
 - Building (label 9): Covers all types of buildings located within the railway corridor, such as houses, warehouses, and stations.
 
+<img src="images/rail3d_stats.png" alt="Network" style="zoom:100%;" />
+
 
 ## ⭐ Benchmark
 
+<img src="images/hmls_benchmark.png" alt="Network" style="zoom:100%;" />
 
+<img src="images/sncf_benchmark.png" alt="Network" style="zoom:100%;" />
+
+<img src="images/infrabel_benchmark.png" alt="Network" style="zoom:100%;" /> 
 
 ## ✔ Code
 

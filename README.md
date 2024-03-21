@@ -3,7 +3,7 @@
 <a href="" target="_blank">Rail3D: Multi-Context Point Cloud Dataset and New Approach for Railways Semantic Understanding</a>
 </h3>
 
-In this paper, we propose the first multi-context point cloud dataset called Rail3D. This dataset covers three countries: Hungary, France, and Belgium, with a total length of almost 5.8 kilometers and approximately 288 million points. It covers the 9 most relevant classes for railway applications: Ground, Vegetation, Rail, Poles, Wires, Signalling, Fenc-es, Installations, and Buildings. Our novel approach employs the LightGBM machine learning model for semantic segmentation, showcasing promising performance on three distinct railway datasets. It achieves significantly higher mean Intersection over Union (IoU) scores compared 3DMASC, but still behind the KPConv performance. The best per-forming model, a fine-tuned KPConv, achieved a mean Intersection over Union (mIoU) of 86%. While ours achieved a mIoU of 71%, outperforming Random Forest with 70%. The Rail3D dataset, publicly available for France and Hungary, will overcomes limitations in existing datasets, fostering the training of more generalizable learning models. We are also looking for feedback from the user community to improve our approach and grow the da-taset with other countries. We recommend evaluating our developed dataset with alterna-tive deep learning methods to assess their performance. Additionally, exploring the de-veloped method in diverse railway contexts by selecting different objects. Future work in-volves the exploration of semantic information within the Rail3D for 3D change detection, aiming to assess the use of semantics for change detection in different railway contexts.
+In this paper, we propose the first multi-context point cloud dataset called Rail3D. This dataset covers three countries: Hungary, France, and Belgium, with a total length of almost 5.8 kilometers and approximately 288 million points. It covers the 9 most relevant classes for railway applications: Ground, Vegetation, Rail, Poles, Wires, Signalling, Fences, Installations, and Buildings. We conducted a generic classification with 9 universal classes (Ground, Vegetation, Rail, Poles, Wires, Signaling, Fence, Installation and Building) and evaluated the performance of three state-of-the-art models: KPConv (Kernel Point Convolution), LightGBM, and Random Forest. The best performing model, a fine-tuned KPConv, achieved a mean Intersection over Union (mIoU) of 86%. While the LightGBM-based method achieved a mIoU of 71%, outperforming Random Forest. We are also looking for feedback from the user community to improve our approach and grow the dataset with other countries. We recommend evaluating our developed dataset with alternative deep learning methods to assess their performance. Additionally, exploring the developed method in diverse railway contexts by selecting different objects. Future work involves the exploration of semantic information within the Rail3D for 3D change detection, aiming to assess the use of semantics for change detection in different railway contexts.
 
 ## ⭐ Download
 
@@ -14,10 +14,16 @@ Download links will be sent automatically after completing the application.
 ## 📌 Dataset
 
 This section details the process of creating the datasets and the methods developed. We begin by describing the data specifications, then the used classes, and how the annotation process was performed.
+<img src="images/rail3d.png" alt="Network" style="zoom:100%;" />
+
 ## Dataset specification
 The Rail3D dataset is the first multi-context point cloud dataset for railway semantic understanding. It is composed of three distinct datasets from Hungary, France, and Belgium, providing a diverse representation of the railway. We annotated three datasets for rail-way scene understanding: HMLS, SNCF, and INFRABEL. The first two datasets are publicly available and provide a diverse representation of railway environments. The third dataset was provided by Infrabel, the Belgian railway infrastructure manager, under a confidentiality agreement. The datasets were acquired using different LiDAR sensors, en-suring a wide range of point densities and acquisition conditions. This diversity is crucial for developing robust and generalizable models for railway scene understanding. The specifications of each dataset are detailed in the subsections below.
+
+<img src="images/overview.png" alt="Network" style="zoom:100%;" />
+
 ### Hungarian MLS point clouds of railroad environment
-This LiDAR dataset represents a collection acquired by the Hungarian State Railways using the mobile mapping system (MMS); Riegl VMX-450 high-density. These LiDAR scans were conducted from a railroad vehicle recording data at a rate of 1.1 million points per second. It exhibited high precision, with an average 3D range accuracy of 3 mm and a maximum threshold of 7 mm, ensuring high-quality data capture. The positional accuracy of the acquired point clouds averaged 3 cm, with a maximum threshold of 5 cm. This dataset not only contain georeferenced spatial information in the form of 3D coordinates but also incorporate intensity and RGB data, enhancing their utility for diverse applica-tions. The datasets adhere to the Hungarian national spatial reference system, designated as EPSG:23700, ensuring their compatibility with regional mapping efforts. Originally, three distinct datasets were thoughtfully selected, each representing different topograph-ical regions within Hungary. The original data can be found at: https://data.mendeley.com/datasets/ccxpzhx9dj/ under CC BY NC 3.0 licence.  
+This LiDAR dataset represents a collection acquired by the Hungarian State Railways using the mobile mapping system (MMS); Riegl VMX-450 high-density. These LiDAR scans were conducted from a railroad vehicle recording data at a rate of 1.1 million points per second. It exhibited high precision, with an average 3D range accuracy of 3 mm and a maximum threshold of 7 mm, ensuring high-quality data capture. The positional accuracy of the acquired point clouds averaged 3 cm, with a maximum threshold of 5 cm. This dataset not only contain georeferenced spatial information in the form of 3D coordinates but also incorporate intensity and RGB data, enhancing their utility for diverse applica-tions. The datasets adhere to the Hungarian national spatial reference system, designated as EPSG:23700, ensuring their compatibility with regional mapping efforts. Originally, three distinct datasets were thoughtfully selected, each representing different topograph-ical regions within Hungary. The original data can be found at: https://data.mendeley.com/datasets/ccxpzhx9dj/ under CC BY NC 3.0 licence.
+  
 
 ### French MLS point clouds of railroad environment
 The SNCF LiDAR dataset is a valuable resource provided by SNCF Reseau, the French state-owned railway company. This dataset comprises approximately 2 kilometers of rail-borne LiDAR data, representing a non-annotated subset of a more extensive collection. The geospatial reference system employed for this dataset is RGF93-CC44 / NGF-IGN69, ensuring its alignment with regional mapping standards and geographic referencing. The dataset is primarily presented in the compressed LAZ format with a total of 16 tiles publicly available under the Open Database License (ODbL). 
@@ -41,7 +47,7 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 
 ## ⭐ Benchmark
 
-Coming soon...
+
 
 ## ✔ Code
 
@@ -53,7 +59,7 @@ If you find our work useful in your research, please consider citing:
 
 ```
 @article{
-
+Under review process
 }
 ```
 ## 🙌 Acknowledgements

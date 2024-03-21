@@ -11,15 +11,18 @@ Please fill out this [**Data Request**](https://forms.gle/2iLWQQhhyRfzGrgq5) if 
 
 Download links will be sent automatically after completing the application.
 
+<img src="images/rail3d.png" alt="Network" style="zoom:100%;" />
+
 ## 📌 Dataset
 
 This section details the process of creating the datasets and the methods developed. We begin by describing the data specifications, then the used classes, and how the annotation process was performed.
-<img src="images/rail3d.png" alt="Network" style="zoom:100%;" />
+
+<img src="images/overview.png" alt="Network" style="zoom:100%;" />
 
 ## Dataset specification
 The Rail3D dataset is the first multi-context point cloud dataset for railway semantic understanding. It is composed of three distinct datasets from Hungary, France, and Belgium, providing a diverse representation of the railway. We annotated three datasets for rail-way scene understanding: HMLS, SNCF, and INFRABEL. The first two datasets are publicly available and provide a diverse representation of railway environments. The third dataset was provided by Infrabel, the Belgian railway infrastructure manager, under a confidentiality agreement. The datasets were acquired using different LiDAR sensors, en-suring a wide range of point densities and acquisition conditions. This diversity is crucial for developing robust and generalizable models for railway scene understanding. The specifications of each dataset are detailed in the subsections below.
 
-<img src="images/overview.png" alt="Network" style="zoom:100%;" />
+<img src="images/existing_dataset.png" alt="Network" style="zoom:100%;" />
 
 ### Hungarian MLS point clouds of railroad environment
 This LiDAR dataset represents a collection acquired by the Hungarian State Railways using the mobile mapping system (MMS); Riegl VMX-450 high-density. These LiDAR scans were conducted from a railroad vehicle recording data at a rate of 1.1 million points per second. It exhibited high precision, with an average 3D range accuracy of 3 mm and a maximum threshold of 7 mm, ensuring high-quality data capture. The positional accuracy of the acquired point clouds averaged 3 cm, with a maximum threshold of 5 cm. This dataset not only contain georeferenced spatial information in the form of 3D coordinates but also incorporate intensity and RGB data, enhancing their utility for diverse applica-tions. The datasets adhere to the Hungarian national spatial reference system, designated as EPSG:23700, ensuring their compatibility with regional mapping efforts. Originally, three distinct datasets were thoughtfully selected, each representing different topograph-ical regions within Hungary. The original data can be found at: https://data.mendeley.com/datasets/ccxpzhx9dj/ under CC BY NC 3.0 licence.
@@ -58,6 +61,16 @@ To ensure the comprehensiveness and relevance of the class labels, we conducted 
 <img src="images/sncf_benchmark.png" alt="Network" style="zoom:100%;" />
 
 <img src="images/infrabel_benchmark.png" alt="Network" style="zoom:100%;" /> 
+
+<img src="images/infrabel_gt.png" alt="Network" style="zoom:100%;" />
+
+<img src="images/infrabel_kpconv.png" alt="Network" style="zoom:100%;" />
+
+<img src="images/infrabel_3dmasc.png" alt="Network" style="zoom:100%;" />
+
+<img src="images/infrabel_lightgbm.png" alt="Network" style="zoom:100%;" />
+
+
 
 ## ✔ Code
 

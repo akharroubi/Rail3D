@@ -30,7 +30,8 @@ This LiDAR dataset represents a collection acquired by the Hungarian State Railw
 <img src="images/hmls.png" alt="Network" style="zoom:100%;" />
 
 ### French MLS point clouds of railroad environment
-The SNCF LiDAR dataset is a valuable resource provided by SNCF Reseau, the French state-owned railway company. This dataset comprises approximately 2 kilometers of rail-borne LiDAR data, representing a non-annotated subset of a more extensive collection. The geospatial reference system employed for this dataset is RGF93-CC44 / NGF-IGN69, ensuring its alignment with regional mapping standards and geographic referencing. The dataset is primarily presented in the compressed LAZ format with a total of 16 tiles publicly available under the Open Database License (ODbL). 
+The SNCF LiDAR dataset is a valuable resource provided by SNCF Reseau, the French state-owned railway company. This dataset comprises approximately 2 kilometers of rail-borne LiDAR data, representing a non-annotated subset of a more extensive collection. The geospatial reference system employed for this dataset is RGF93-CC44 / NGF-IGN69, ensuring its alignment with regional mapping standards and geographic referencing. The dataset is primarily presented in the compressed LAZ format with a total of 16 tiles publicly available under the Open Database License (ODbL).
+The original data can be found at:https://ressources.data.sncf.com/explore/dataset/nuage-points-3d/table/
 
 <img src="images/sncf.png" alt="Network" style="zoom:100%;" /> 
 
@@ -185,7 +186,9 @@ If you find our work useful in your research, please consider citing:
 
 ```
 @article{
-Under review process
+Kharroubi, A.; Ballouch, Z.; Hajji, R.; Yarroudh, A.; Billen, R. 
+Multi-Context Point Cloud Dataset and Machine Learning for Railway Semantic Segmentation. 
+Infrastructures 2024, 9, 71. https://doi.org/10.3390/infrastructures9040071
 }
 ```
 ## 🙌 Acknowledgements

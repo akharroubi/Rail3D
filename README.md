@@ -40,6 +40,20 @@ For several years, Infrabel, the Belgian railway infrastructure manager, was usi
 
 <img src="images/infrabel.png" alt="Network" style="zoom:100%;" />
 
+### Update: New Dutch MLS point clouds of railroad environment
+
+We recently added a large dataset on the Dutch railways. The data was annotated by Milo Beliën as part of his master's thesis on point cloud segmentation, and some of it was annotated and edited by us. The point clouds in .ply format are in the EPSG:28992 coordinate system, and cover two main areas: 
+
+1. Single lane track section between the Dutch cities Venendaal - Renen
+2. Dual lane track section near the Dutch city of Culemborg.
+
+The raw data was downloaded from https://spoorinbeeld.nl/, and is licensed under https://www.spoordata.nl/disclaimer?
+To download the annotated data, click on the link: [**Data Request**](https://forms.gle/2iLWQQhhyRfzGrgq5)
+
+Note that a new class (number 10) was added to cover all dynamic objects (human, train) and the rest of the unidentified objects.
+
+For further information, please contact: 2002milo@gmail.com or akharroubi@uliege.be
+
 ## Classes typology
 To ensure the comprehensiveness and relevance of the class labels, we conducted a thorough review of existing literature and consulted with railway industry experts. Therefore, we have not limited our analysis to the meaning and geometric appearance of each class, but also its relevance to the railway industry. This resulted in the following list of classes and their corresponding objects as illustrated in Figure 5:
 - Ground (label 1): Represents various ground surfaces, including rough ground, cement, and asphalt.
